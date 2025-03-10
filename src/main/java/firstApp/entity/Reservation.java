@@ -23,4 +23,7 @@ public class Reservation implements Serializable {
     private boolean estValide;
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Etudiant> etudiants;
+
+    @ManyToOne
+    private Chambre chambre;
 }

@@ -1,10 +1,15 @@
 package firstApp.controller;
 
 import firstApp.entity.Chambre;
-import firstApp.service.ChambreService;
+import firstApp.services.ChambreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+
+@RestController
+@RequestMapping("chambre")
 public class ChambreController {
     @Autowired
     private ChambreService chambreService;
